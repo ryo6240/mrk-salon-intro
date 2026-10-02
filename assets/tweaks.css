@@ -1,0 +1,11 @@
+@media(min-width:641px) and (max-width:900px){
+  .mission-inner{grid-template-columns:40% minmax(0,1fr)}
+}
+@media(max-width:640px){
+  .challenge-grid{grid-template-columns:1fr}
+  .challenge-card,.challenge-card:nth-child(odd),.challenge-card:nth-child(even){display:grid;grid-template-columns:42px 1fr;gap:12px;min-height:0;padding:19px 0!important;border-right:0;border-bottom:1px solid var(--line)}
+  .challenge-card .num{font-size:22px;margin-top:3px}
+  .challenge-card p{font-size:18px;line-height:1.65;margin:0}
+  .market .section-head h2,.support .section-head h2{font-size:30px;letter-spacing:.01em}
+  .mission h2{font-size:34px;letter-spacing:.02em}
+}

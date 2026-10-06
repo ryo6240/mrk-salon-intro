@@ -1,0 +1,34 @@
+.future-wedding{max-width:1420px;margin:8px auto 0;padding:0 22px}
+.future-wedding figure{position:relative;overflow:hidden;min-height:470px;margin:0;background:#16253e}
+.future-wedding img{display:block;width:100%;height:470px;object-fit:cover;object-position:center 52%;filter:saturate(.86)}
+.future-wedding figure::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,19,33,.7),rgba(10,19,33,.05) 75%)}
+.future-wedding figcaption{position:absolute;z-index:1;left:clamp(28px,6vw,90px);bottom:clamp(30px,5vw,64px);max-width:540px;color:white}
+.future-wedding figcaption span{display:block;margin-bottom:17px;color:#dfc694;font-size:11px;letter-spacing:.18em}
+.future-wedding figcaption strong{display:block;font-family:var(--serif);font-size:clamp(28px,3.4vw,48px);font-weight:400;line-height:1.5;letter-spacing:.04em}
+.future-wedding figcaption small{display:block;margin-top:22px;font-size:11px;line-height:1.7;color:#eeece8}
+.method-card .method-image{position:relative;margin:0 0 27px;overflow:hidden;background:#23334c}
+.method-card .method-image img{display:block;width:100%;height:245px;object-fit:cover;filter:saturate(.84);transition:transform .45s ease}
+.method-card:hover .method-image img{transform:scale(1.035)}
+.method-card .method-image figcaption{position:absolute;bottom:0;left:0;right:0;padding:35px 14px 13px;background:linear-gradient(transparent,rgba(9,18,31,.72));color:#fff;font-size:10px;letter-spacing:.06em}
+.method-card .number{display:block}
+.method-card h3{margin-top:15px}
+.activity-diary{margin-top:72px;border-top:1px solid #bfb4a2;padding-top:35px}
+.activity-diary-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:22px}
+.activity-diary-head small{display:block;margin-bottom:12px;color:#9d8660;font-size:11px;letter-spacing:.16em}
+.activity-diary-head h3{margin:0;font-family:var(--serif);font-size:clamp(27px,3vw,39px);font-weight:400;line-height:1.45;color:var(--navy)}
+.activity-diary-head p{max-width:360px;margin:0;font-size:13px;line-height:1.9;color:#596474}
+.activity-diary-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:325px 275px;gap:12px}
+.activity-diary-grid figure{position:relative;overflow:hidden;margin:0;background:#17243c}
+.activity-diary-grid figure:last-child{grid-column:span 2}
+.activity-diary-grid img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.86);transition:transform .5s ease}
+.activity-diary-grid figure:hover img{transform:scale(1.035)}
+.activity-diary-grid figure:first-child img{object-position:center 60%}
+.activity-diary-grid figure:nth-child(2) img{object-position:center 45%}
+.activity-diary-grid figure:last-child img{object-position:center 48%}
+.activity-diary-grid figure::after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,rgba(8,17,32,.78))}
+.activity-diary-grid figcaption{position:absolute;z-index:1;left:22px;bottom:19px;color:#fff}
+.activity-diary-grid figcaption span{display:block;margin-bottom:4px;color:#e5c994;font-size:10px;letter-spacing:.13em}
+.activity-diary-grid figcaption strong{font-family:var(--serif);font-size:21px;font-weight:400}
+.activity-diary-note{margin:12px 0 0;color:#6e7378;font-size:11px;line-height:1.7}
+@media(max-width:900px){.method-card .method-image img{height:190px}.activity-diary-grid{grid-template-rows:270px 220px}}
+@media(max-width:640px){.future-wedding{padding:0 8px}.future-wedding figure,.future-wedding img{height:430px;min-height:430px}.future-wedding img{object-position:58% center}.future-wedding figure::after{background:linear-gradient(0deg,rgba(10,19,33,.82),rgba(10,19,33,.03) 90%)}.future-wedding figcaption{left:25px;right:24px;bottom:30px}.future-wedding figcaption strong{font-size:28px}.future-wedding figcaption small{font-size:10px}.method-card .method-image{margin-bottom:19px}.method-card .method-image img{height:235px}.activity-diary{margin-top:54px}.activity-diary-head{display:block}.activity-diary-head p{margin-top:13px}.activity-diary-grid{grid-template-columns:1fr;grid-template-rows:320px 320px 250px;gap:8px}.activity-diary-grid figure:last-child{grid-column:auto}.activity-diary-grid figure:first-child img{object-position:center 65%}.activity-diary-grid figure:nth-child(2) img{object-position:center 43%}.activity-diary-grid figcaption{left:17px;bottom:14px}.activity-diary-grid figcaption span{font-size:9px}.activity-diary-grid figcaption strong{font-size:20px}.activity-diary-grid figure:last-child figcaption strong{font-size:20px}.activity-diary-note{font-size:10px}}

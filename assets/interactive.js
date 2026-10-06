@@ -22,7 +22,7 @@
 
   if (!reducedMotion && 'IntersectionObserver' in window) {
     const revealItems = document.querySelectorAll(
-      '.section-head,.market-picture,.vision-card,.method-card,.step,.support-card,.showcase-grid figure,.learning-map-grid>div,.delivery-grid article,.bonus-card,.community-gallery figure,.time-row,.story,.team-card,.faq details'
+      '.section-head,.vision-card,.method-card,.step,.support-card,.learning-map-grid>div,.delivery-grid article,.bonus-card,.community-gallery figure,.time-row,.story,.team-card,.faq details'
     );
     revealItems.forEach((item, index) => {
       item.classList.add('mrk-reveal');
@@ -140,13 +140,13 @@
       figure.className = 'mrk-dialog-slide';
       const image = document.createElement('img');
       image.src = slide;
-      image.alt = `${title}を説明した営業資料のページ`;
+      image.alt = `${title}を紹介する説明画像`;
       image.loading = 'lazy';
       const zoom = document.createElement('a');
       zoom.href = slide;
       zoom.target = '_blank';
       zoom.rel = 'noopener';
-      zoom.setAttribute('aria-label', `${title}の営業資料を元画像で開く`);
+      zoom.setAttribute('aria-label', `${title}の説明画像を元画像で開く`);
       zoom.append(image);
       figure.append(zoom);
       appendText(figure, 'figcaption', 'mrk-slide-zoom-label', '画像を拡大して読む ↗');
@@ -170,7 +170,7 @@
     button.className = 'support-more';
     button.setAttribute('aria-haspopup', 'dialog');
     button.setAttribute('aria-controls', detailDialog.id);
-    button.innerHTML = '営業資料で詳しく見る <span aria-hidden="true">↗</span>';
+    button.innerHTML = 'サポート内容を詳しく見る <span aria-hidden="true">↗</span>';
     content?.append(button);
     button.addEventListener('click', () => showDetail(button, {
       kicker: `SUPPORT ${String(index + 1).padStart(2, '0')}`,
@@ -178,7 +178,7 @@
       description: card.querySelector('p')?.textContent?.trim() || '',
       points: [...card.querySelectorAll('.support-details li')].map(li => li.textContent.trim()),
       slide: `assets/${salesSlides[index]}`,
-      note: '掲載画像は営業資料の説明図です。実際の会員画面やサポート画面を示すものではありません。内容・条件は個別面談でご確認ください。'
+      note: '掲載画像はサポート内容の説明図です。実際の会員画面やサポート画面を示すものではありません。内容・条件は個別面談でご確認ください。'
     }));
   });
 
@@ -203,20 +203,20 @@
     button.addEventListener('click', () => showDetail(button, {
       kicker: `MRK METHOD LIBRARY / ${String(index + 1).padStart(2, '0')}`,
       title,
-      description: '営業資料に掲載された、この領域の学習テーマです。必要な内容を予習・復習し、活動中の課題に合わせて見直します。',
+      description: 'この領域で学べるテーマをまとめました。必要な内容を予習・復習し、活動中の課題に合わせて見直します。',
       points: lessonPoints[index],
       slide: null,
-      note: '営業資料の掲載内容を紹介しています。実際の教材一覧画面ではありません。収録内容・利用条件は面談でご確認ください。'
+      note: '教材テーマを紹介しています。実際の教材一覧画面ではありません。収録内容・利用条件は面談でご確認ください。'
     }));
   });
 
-  document.querySelectorAll('.market-picture a[href^="assets/"],.showcase-grid a[href^="assets/"],.case-gallery-grid a[href^="assets/"]').forEach(link => {
+  document.querySelectorAll('.case-gallery-grid a[href^="assets/"]').forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault();
       const image = link.querySelector('img');
       lightboxImage.src = link.getAttribute('href');
-      lightboxImage.alt = image?.alt || '営業資料の画像';
-      lightboxCaption.textContent = image?.alt || '営業資料の画像';
+      lightboxImage.alt = image?.alt || 'MRKサロンの画像';
+      lightboxCaption.textContent = image?.alt || 'MRKサロンの画像';
       lightboxOpenOriginal.href = link.getAttribute('href');
       openDialog(lightbox, link);
     });

@@ -1,5 +1,6 @@
 /* Restrained motion and hands-on details for the MRK introduction. */
 html{scroll-padding-top:24px}
+.proof-unit{font-size:.46em;margin-left:5px;white-space:nowrap;vertical-align:baseline}
 .motion-progress{position:fixed;z-index:70;top:0;left:0;width:100%;height:3px;transform:scaleX(0);transform-origin:left center;background:linear-gradient(90deg,#a54850,#d2b887);pointer-events:none}
 .hero-image img{animation:mrk-hero-drift 13s ease-in-out infinite alternate}
 @keyframes mrk-hero-drift{from{transform:scale(1.035) translateX(-.6%)}to{transform:scale(1.09) translateX(.6%)}}
@@ -22,9 +23,9 @@ html{scroll-padding-top:24px}
 .lesson-trigger:hover:after{transform:translate(3px,-3px);opacity:1}
 .lesson-trigger span{font:16px Georgia,serif;letter-spacing:.1em;color:#d4bc91;display:block;margin-bottom:17px}
 .lesson-trigger strong{font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.55;letter-spacing:.03em}
-.showcase-grid a,.case-gallery-grid a,.market-picture a{cursor:zoom-in}
-.showcase-grid a img,.case-gallery-grid a img,.market-picture a img{transition:transform .5s ease}
-.showcase-grid a:hover img,.case-gallery-grid a:hover img,.market-picture a:hover img{transform:scale(1.045)}
+.case-gallery-grid a{cursor:zoom-in}
+.case-gallery-grid a img{transition:transform .5s ease}
+.case-gallery-grid a:hover img{transform:scale(1.045)}
 .bonus-card{transition:transform .35s ease,box-shadow .35s ease}
 .bonus-card:hover{transform:translateY(-5px);box-shadow:0 36px 65px rgba(3,10,22,.3)}
 .mrk-dialog{width:min(950px,calc(100% - 34px));max-height:min(90vh,950px);padding:0;border:1px solid #cbbd9f;background:#f7f4ee;color:#172540;box-shadow:0 34px 100px rgba(4,13,30,.35);overflow:auto;overscroll-behavior:contain;opacity:0;transform:translateY(24px) scale(.985);transition:opacity .3s ease,transform .3s ease,display .3s allow-discrete,overlay .3s allow-discrete}
@@ -56,4 +57,4 @@ html{scroll-padding-top:24px}
 body.mrk-modal-open{overflow:hidden}
 .support-more:focus-visible,.lesson-trigger:focus-visible,.mrk-dialog-close:focus-visible,.mrk-dialog-cta:focus-visible{outline:3px solid #bb6d70;outline-offset:4px}
 @media(max-width:640px){.lesson-trigger{min-height:132px;padding:18px 15px}.lesson-trigger span{font-size:13px;margin-bottom:12px}.lesson-trigger strong{font-size:15px}.lesson-trigger:after{font-size:17px}.mrk-dialog{width:calc(100% - 18px);max-height:92dvh}.mrk-dialog-body{padding:55px 23px 34px}.mrk-dialog-body h2{font-size:27px}.mrk-dialog-list{grid-template-columns:1fr;gap:7px}.mrk-dialog-slide{margin-top:16px}.mrk-dialog-close{top:9px;margin:9px 9px -51px 0}.mrk-lightbox{width:calc(100% - 12px)}.mrk-lightbox-figure img{max-height:calc(92dvh - 125px)}}
-@media(prefers-reduced-motion:reduce){.hero-image img,.hero-copy>*{animation:none!important}.motion-ready .mrk-reveal{opacity:1;transform:none;transition:none}.support-card,.support-cover,.lesson-trigger,.bonus-card,.mrk-dialog,.showcase-grid a img,.case-gallery-grid a img{transition:none!important}.support-card:hover,.bonus-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.hero-image img,.hero-copy>*{animation:none!important}.motion-ready .mrk-reveal{opacity:1;transform:none;transition:none}.support-card,.support-cover,.lesson-trigger,.bonus-card,.mrk-dialog,.case-gallery-grid a img{transition:none!important}.support-card:hover,.bonus-card:hover{transform:none}}

@@ -32,3 +32,38 @@
 .activity-diary-note{margin:12px 0 0;color:#6e7378;font-size:11px;line-height:1.7}
 @media(max-width:900px){.method-card .method-image img{height:190px}.activity-diary-grid{grid-template-rows:270px 220px}}
 @media(max-width:640px){.future-wedding{padding:0 8px}.future-wedding figure,.future-wedding img{height:430px;min-height:430px}.future-wedding img{object-position:58% center}.future-wedding figure::after{background:linear-gradient(0deg,rgba(10,19,33,.82),rgba(10,19,33,.03) 90%)}.future-wedding figcaption{left:25px;right:24px;bottom:30px}.future-wedding figcaption strong{font-size:28px}.future-wedding figcaption small{font-size:10px}.method-card .method-image{margin-bottom:19px}.method-card .method-image img{height:235px}.activity-diary{margin-top:54px}.activity-diary-head{display:block}.activity-diary-head p{margin-top:13px}.activity-diary-grid{grid-template-columns:1fr;grid-template-rows:320px 320px 250px;gap:8px}.activity-diary-grid figure:last-child{grid-column:auto}.activity-diary-grid figure:first-child img{object-position:center 65%}.activity-diary-grid figure:nth-child(2) img{object-position:center 43%}.activity-diary-grid figcaption{left:17px;bottom:14px}.activity-diary-grid figcaption span{font-size:9px}.activity-diary-grid figcaption strong{font-size:20px}.activity-diary-grid figure:last-child figcaption strong{font-size:20px}.activity-diary-note{font-size:10px}}
+
+/* The visible story photography below is cut directly from the supplied MRK pages. */
+.image-story.deck-scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,43%);min-height:520px;background:#10203b}
+.image-story.deck-scene::after{display:none}
+.image-story.deck-scene>img{grid-column:2;grid-row:1;width:100%;height:520px;object-fit:cover;object-position:center 43%;filter:none}
+.image-story.deck-scene .image-story-copy{grid-column:1;grid-row:1;position:relative;left:auto;top:auto;right:auto;bottom:auto;transform:none;align-self:center;margin-left:max(calc((100vw - 1120px)/2),38px);margin-right:38px;max-width:540px}
+.image-story.deck-scene .image-credit{right:calc(43% + 20px);bottom:18px}
+.future-visual{height:auto;gap:7px;background:#e9e4d9}
+.future-visual figure,.future-visual figure+figure{display:grid;grid-template-columns:54% 46%;height:425px;border:0}
+.future-visual img{width:100%;height:100%;object-fit:cover;object-position:center 43%;filter:none}
+.future-visual figure:first-child img,.future-visual figure:nth-child(2) img{object-position:center 43%}
+.future-visual figcaption{position:static;display:flex;flex-direction:column;align-items:flex-start;justify-content:end;gap:12px;background:#17253d;padding:28px 22px;color:#fff}
+.future-visual figcaption strong{font-size:20px}
+.future-visual figcaption span{color:#e2c68d}
+.future-wedding{max-width:1420px;margin:7px auto 0;padding:0 22px}
+.future-wedding figure{display:grid;grid-template-columns:48% 52%;min-height:475px;background:#101e35}
+.future-wedding figure::after{display:none}
+.future-wedding .deck-wedding-photo{display:block;grid-column:2;grid-row:1;height:475px;overflow:hidden}
+.future-wedding .deck-wedding-photo img{width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+.future-wedding figcaption{position:static;grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;max-width:none;padding:50px clamp(32px,5vw,80px);color:white}
+.future-wedding figcaption strong{font-size:clamp(30px,3.2vw,43px)}
+.future-wedding figcaption small{max-width:430px;line-height:1.9}
+.deck-source-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.deck-source-grid figure{margin:0;padding:8px 8px 20px;background:#fff;border:1px solid #d4c9b9;box-shadow:0 18px 38px rgba(20,29,45,.08)}
+.deck-source-grid a{display:block;overflow:hidden}
+.deck-source-grid img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;transition:transform .4s ease}
+.deck-source-grid a:hover img{transform:scale(1.015)}
+.deck-source-grid figcaption{display:flex;flex-direction:column;gap:5px;padding:19px 18px 3px;color:#14233d}
+.deck-source-grid figcaption span{font-size:10px;letter-spacing:.13em;color:#9c865f}
+.deck-source-grid figcaption strong{font-family:var(--serif);font-size:23px;font-weight:400}
+.deck-source-grid figcaption small{font-size:11px;color:#697282}
+.bonus-card figure.bonus-number{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#233653,#0c172b)}
+.bonus-card figure.bonus-number span{font-family:Georgia,serif;font-size:130px;font-weight:400;letter-spacing:-.05em;color:#d5b87e;line-height:1}
+@media(max-width:900px){.image-story.deck-scene{grid-template-columns:1fr 43%}.image-story.deck-scene .image-story-copy{margin-left:35px}.image-story.deck-scene h2{font-size:36px}.future-visual figure,.future-visual figure+figure{height:360px}.future-visual figcaption{padding:22px 17px}.future-visual figcaption strong{font-size:17px}}
+@media(max-width:640px){.image-story.deck-scene{display:flex;flex-direction:column;min-height:0}.image-story.deck-scene>img{order:0;width:100%;height:315px;min-height:315px;object-position:center 40%}.image-story.deck-scene .image-story-copy{order:1;position:static;left:auto;right:auto;top:auto;bottom:auto;transform:none;max-width:none;margin:0;padding:34px 24px 44px}.image-story.deck-scene .image-credit{order:2;position:static;text-align:right;padding:0 22px 17px}.future-visual{grid-template-columns:1fr;gap:6px}.future-visual figure,.future-visual figure+figure{grid-template-columns:55% 45%;height:285px;min-height:0;border:0}.future-visual figcaption{padding:19px 15px}.future-visual figcaption strong{font-size:16px}.future-visual figcaption span{font-size:9px}.future-wedding{padding:0 8px}.future-wedding figure{display:flex;flex-direction:column;min-height:0;height:auto}.future-wedding .deck-wedding-photo{order:0;width:100%;height:290px}.future-wedding .deck-wedding-photo img{height:290px;min-height:0;object-position:center 35%}.future-wedding figcaption{order:1;padding:29px 26px 36px}.future-wedding figcaption strong{font-size:28px}.future-wedding figcaption small{font-size:11px;margin-top:14px}.deck-source-grid{grid-template-columns:1fr;gap:16px}.deck-source-grid figcaption{padding:14px 12px 2px}.deck-source-grid figcaption strong{font-size:20px}.bonus-card figure.bonus-number span{font-size:94px}}
